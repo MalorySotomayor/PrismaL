@@ -1,0 +1,476 @@
+* {
+  margin:0;
+  padding:0;
+}
+html{
+  height: 100%;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #333333;
+  background-color: #fff;
+  height: 100%;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.landing.hidden-xs {
+  height: 100%;
+}
+/*-------------------------------------------------menu--------------------------------------------------------------*/
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(../fonts/bootstrap/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: saunder;
+  src: url(../fonts/bootstrap/saunder.ttf);
+}
+
+ 
+ 
+.name-lion{
+  float: right;
+  position: relative;
+  display: inline-flex;
+  top: 10px;
+  font-family: "saunder";
+  font-size: 35px;
+  color: white;
+  margin-right: 446px;
+}
+
+.lionicon-menu{
+  width: 100px;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #454541;
+  color: #fff;
+  z-index: 1000;
+  height: 85px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align: left;
+  line-height: 65px;
+
+}
+.header.shrink {
+    height: 60px;
+    line-height: 52px;
+}
+.header ul li
+{
+    font-size:30px;
+    font-weight:normal;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header.shrink ul li
+{
+    font-size:24px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.content
+{
+height:0px;
+ /*just to get the page to scroll*/
+}
+
+......................................................
+
+header nav {
+  width: 100%;
+  background: #454541;
+}
+
+
+header nav ul {
+  overflow:hidden;
+  list-style:none;
+  
+}
+
+nav{
+  left: 0px;
+  top: 84px;
+}
+ 
+ul li {
+  float: left;
+  height: 65px;
+  list-style:none;
+}
+
+ul li a {
+  color: white;
+  padding: 0px 68px;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  list-style:none;
+}
+
+nav ul li a:hover {
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+
+.menu_bar {
+  display:none;
+}
+
+ .navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px 10px 10px;
+  background-color: white;
+  border: black;
+  border-radius: 4px;
+}
+
+
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #454541;
+}
+
+
+@media screen and (max-width:800px ) {
+  nav {
+    width:85%;
+    height:100%;
+    left:-100%;
+    margin:0;
+    position: fixed;
+    background-color: #454541;
+  }
+ 
+ nav ul li {
+    display:block;
+    float: none;
+    border-bottom:1px solid rgba(255,255,255, .3);
+
+  }
+}
+
+ul, ol {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+ul li.selected {
+  background: #fff;
+}
+
+ul li.selected a {
+  color: #384047;
+}
+
+
+
+/*.active{
+  background-color: white;
+  
+}
+
+.active a{
+  color: black;
+}*/
+
+
+/*-------------------------------------------------VIDEO--------------------------------------------------------------*/
+.video{
+  text-align: center;
+  width: 100%;
+  height: 586px;
+  padding-top: 4%;
+  -webkit-font-smoothing: antialiased;
+  }
+/*-------------------------------------------------LANDING--------------------------------------------------------------*/
+.nosotros{
+  background-image: url(../img/fondonosotros.jpg);
+  padding-top: 6%;
+  height: 100%;
+}
+
+.title-nosotros{
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.description-nosotros{
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.description-nosotrosdos{
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.botton-productos{
+  width: 10%;
+  height: 10%;
+  text-align: center;
+  background-color: orange;
+  margin: 0 auto;
+  padding: 2px 0px 0px 0px;
+}
+
+.text-botton-productos{
+  content: white;
+}
+
+.grid-nosotros{
+  text-align: center;
+  padding: 20px 0px 20px 5px;
+  border: 1px solid black;
+  margin: 15px 10px 0px;
+}
+
+.overlay{
+  width: 93%;
+  min-height: 100%;
+  top: 0px;
+  left: 15px;
+  position: absolute;
+  -webkit-transition: 0.2s;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.overlay:hover{
+  background-color: #000000;
+}
+
+.overlay:hover .product-frase h4{
+  visibility: visible;
+}
+
+
+.productos{
+  background-image: url(../img/fondoproductos.jpg);
+  padding-top: 6%;
+  
+}
+
+
+
+.grid-productos{
+  text-align: center;
+  padding: 20px 0px 20px 5px;
+  border: 1px solid white;
+  margin: 15px 10px 15px;
+}
+
+.space-nosotros{
+  margin-bottom: 20px;
+}
+
+.product-frase{
+  margin: 0 auto;
+}
+
+
+.origin-frase-product{
+  visibility: hidden;
+  position: absolute;
+  color: white;
+  top: 30%;
+  right: 4%;
+}
+
+
+.title-productos{
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  color: white;
+}
+
+.description-productos{
+  text-align: center;
+  color: white;
+}
+
+.clientes{
+  padding-top: 6%;
+}
+
+.grid-clientes{
+  text-align: center;
+  padding: 2% 2% 2% 0%;
+  border: 1px solid black;
+  margin: 15px 10px 15px;
+}
+
+.zoom-pic{
+ 
+  /*webkit-transition-delay: 0.25s; 
+  transition-delay: 0.25s;*/
+ /*     
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;*/
+}
+
+.zoom-pic:hover{
+  width: 305px;
+  height: 180px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.title-clientes{
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+}
+
+.description-clientes{
+   text-align: center;
+   margin: 0px 0px 25px;
+}
+
+.contacto{
+  background-image: url(../img/fondonosotros.jpg);
+}
+
+.consulta{
+  text-align: center;
+  padding: 20px 0px 20px 5px;
+ 
+}
+
+.borde-title-contact-tienda{
+  border: 1px solid black;
+  margin: 0px 0px 5px 0px;
+  background-color: skyblue;
+}
+
+
+form{
+  background-color: white;
+  height: 345px;
+  padding: 20px 0px 0px 0px;
+}
+
+input, textarea{
+  width: 80%;
+  margin: 0px 0px 5px 0px;
+} 
+
+button{
+  background-color: #454541;
+  border-color: transparent;
+  color: white;
+}
+
+.tmaboton{
+  width: 25%;
+  height: 25px;
+}
+
+button[type=submit]:hover {
+  background-color: #4da5f5;
+  -webkit-transform: scale(1.07);
+}
+
+button[type=submit]{
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sub-contactenos{
+  text-align: center;
+  margin: 15px 10px 15px;
+}
+
+.footer{
+  background-color: #454541;
+  width: 100%;
+  height: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------RESPONSIVE DESING--------------------------*/
+
+@media screen and (max-width:800px ) {
+      .container h1 {
+      position: relative;
+      font-size: 75px;
+      top: 90px;
+      color: rgba(252, 250, 250, 1);
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      }
+      .container h3 {
+      position: relative;
+      top: 130px;
+      color: rgba(252, 250, 250, 1);
+      text-align: center;
+      font-size: 45px;
+      font-family: 'Lobster', cursive;
+      }
+      button.ms {
+      position: relative;
+      padding: 20px 50px 20px 50px;
+      border-radius: 10px;
+      top: 200px;
+      left: 18%;
+      background-color: rgba(137, 135, 135, 0.35);
+      border: 1px #E8E1E1 solid;
+      color: white;
+      -webkit-box-shadow: 0 0 0px #333;
+      -moz-box-shadow: 0 0 0px #333;
+      -ms-box-shadow: 0 0 10px #333;
+      -o-box-shadow: 0 0 10px #333;
+      box-shadow: 0 0 75px rgb(226, 107, 148);
+    }
+    .col-md-5 {
+      width: 100%;
+      margin-top: 0px;
+    }
+  } /*final de media*/
